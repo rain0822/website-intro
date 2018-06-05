@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'website-intro',
     environment,
-    rootURL: '/',
+    rootURL: '/countdown-year',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {
