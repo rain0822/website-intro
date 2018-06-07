@@ -1,3 +1,9 @@
+<div class="fixed-action-btn direction-top active" style="top: 0px; right: 0px; padding-top: 0px;">
+  <div class="page center">
+    <h5>{{page}}</h5>
+  </div>
+</div>
+
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!welcome-page}}
 {{!-- Feel free to remove this! --}}
@@ -12,4 +18,18 @@ test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/
 test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>
 test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>
 test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>test<br/>
+
+<div class="fixed-action-btn direction-top active" style="bottom: 25px; left: 25px;">
+  <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "back" page}}>
+    <i class="material-icons">chevron_left</i>
+  </a>
+</div>
+
+<div class="fixed-action-btn direction-top active" style="bottom: 25px; right: 25px;">
+  <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "next" page}}>
+    <i class="material-icons">chevron_right</i>
+  </a>
+</div>
+
+
 {{outlet}}
