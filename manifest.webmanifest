@@ -1,1 +1,21 @@
-{"name":"中華資訊研習","short_name":"中華資訊研習","description":"中華資訊研習","start_url":"/website-intro","display":"standalone","background_color":"#fff","theme_color":"#fff","icons":[]}
+{
+  "name": "中華資訊研習",
+  "short_name": "中華資訊研習",
+  "description": "中華資訊研習",
+  "start_url": "/website-intro",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/website-intro/icon-96d3ea06f7f1d2a94aaba02675043c36.png",
+      "sizes": "192x192",
+      "type":"image/png"
+    },
+    {
+      "src": "/website-intro/icon-96d3ea06f7f1d2a94aaba02675043c36.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
