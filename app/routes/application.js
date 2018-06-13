@@ -13,7 +13,7 @@ export default Route.extend({
     },
     back(p) {
       p--;
-      p = p > 1 ? p : 1;
+      p = p > 0 ? p : 0;
       this.transitionTo(`/?p=${p}`);
     }
   }
