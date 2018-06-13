@@ -82,8 +82,17 @@ nav {
 .info-area {
   a {
     line-height: 2.5;
+    display: inherit;
   }
   border-left: 4px solid blue;
   padding: 1em;
   margin: 10px 0;
+}
+
+.materialboxed {
+  marign: 20px 0;
+}
+
+.preloader-wrapper {
+  margin: 2em;
 }
