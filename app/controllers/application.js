@@ -5,7 +5,7 @@ const { inject: { service }, computed, observer } = Ember;
 export default Controller.extend({
   queryParams: ['p'],
   p: 0,
-  pageMax: 5,
+  pageMax: 6,
   pageTemplate: computed('p', function() {
     return 'page' + this.get('p');
   }),
