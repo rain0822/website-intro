@@ -3,11 +3,11 @@ import Controller from '@ember/controller';
 const { inject: { service }, computed, observer } = Ember;
 
 export default Controller.extend({
-  queryParams: ['page'],
-  page: 1,
-  pageMax: 2,
-  pageTemplate: computed('page', function() {
-    return 'page' + this.get('page');
+  queryParams: ['p'],
+  p: 1,
+  pageMax: 5,
+  pageTemplate: computed('p', function() {
+    return 'page' + this.get('p');
   }),
   screen: service(),
   ytHeight: computed('screen.width', function() {

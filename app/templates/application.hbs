@@ -5,20 +5,24 @@
 </div>
 
 <main>
-  {{partial pageTemplate}}
+  <div class="row">
+    <div class="col s12 l6 offset-l3" style="padding: 0px;">
+      {{partial pageTemplate}}
+    </div>
+  </div>
   {{outlet}}
 </main>
 
-{{#if (gt page 1)}}
+{{#if (gt p 1)}}
   <div class="fixed-action-btn direction-top" style="bottom: 25px; left: 25px;">
-    <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "back" page}}>
+    <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "back" p}}>
       <i class="material-icons">chevron_left</i>
     </a>
   </div>
 {{/if}}
-{{#if (lt page pageMax)}}
+{{#if (lt p pageMax)}}
   <div class="fixed-action-btn direction-top active" style="bottom: 25px; right: 25px;">
-    <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "next" page}}>
+    <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "next" p}}>
       <i class="material-icons">chevron_right</i>
     </a>
   </div>

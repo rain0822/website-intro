@@ -7,14 +7,14 @@ export default Route.extend({
     }
   },
   actions: {
-    next(page) {
-      page++;
-      this.transitionTo(`/?page=${page}`);
+    next(p) {
+      p++;
+      this.transitionTo(`/?p=${p}`);
     },
-    back(page) {
-      page--;
-      page = page > 1 ? page : 1;
-      this.transitionTo(`/?page=${page}`);
+    back(p) {
+      p--;
+      p = p > 1 ? p : 1;
+      this.transitionTo(`/?p=${p}`);
     }
   }
 });
