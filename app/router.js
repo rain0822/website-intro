@@ -8,8 +8,9 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('appliaction');
-  this.route('page1');
-  this.route('page2');
+  for(var i=0; i< 10; i++) {
+    this.route(`page${i}`);
+  }
 });
 
 export default Router;

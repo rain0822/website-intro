@@ -6,13 +6,12 @@ export default function(){
   //     this.use('toLeft'),
   //     this.reverse('toRight')
   //   );
-  this.transition(
-    this.hasClass('toLeft'),
-    this.use('toLeft')
-  );
-
-  this.transition(
-    this.hasClass('toRight'),
-    this.use('toRight')
-  );
+  for(var i=0; i< 10; i++) {
+    this.transition(
+      this.fromRoute(`page${i}`),
+      this.toRoute(`page${i+1}`),
+      this.use('toLeft', {duration: 700}),
+      this.reverse('toRight', {duration: 700})
+    );
+  }
 }
