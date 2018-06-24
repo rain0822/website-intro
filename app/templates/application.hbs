@@ -11,17 +11,19 @@
 </div>
 
 
-{{#if (gt p 0)}}
-  <div class="fixed-action-btn direction-top" style="bottom: 25px; left: 25px;">
-    <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "back" p}}>
-      <i class="material-icons">chevron_left</i>
-    </a>
-  </div>
-{{/if}}
-{{#if (lt p pageMax)}}
-  <div class="fixed-action-btn direction-top active" style="bottom: 25px; right: 25px;">
-    <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "next" p}}>
-      <i class="material-icons">chevron_right</i>
-    </a>
-  </div>
-{{/if}}
+<div style="margin-top: 100px;">
+  {{#if (gt p 0)}}
+    <div class="fixed-action-btn direction-top" style="bottom: 25px; left: 25px;">
+      <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "back" p}}>
+        <i class="material-icons">chevron_left</i>
+      </a>
+    </div>
+  {{/if}}
+  {{#if (lt p pageMax)}}
+    <div class="fixed-action-btn direction-top active" style="bottom: 25px; right: 25px;">
+      <a id="menu" class="btn btn-floating btn-large light-blue waves-effect waves-light waves-circle" {{action "next" p}}>
+        <i class="material-icons">chevron_right</i>
+      </a>
+    </div>
+  {{/if}}
+</div>
